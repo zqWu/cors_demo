@@ -21,3 +21,4 @@ and
 ```
 
 only one config : serverB/index.js, enable_cors = true -> false
+when change -> false, you need clean browser cache
