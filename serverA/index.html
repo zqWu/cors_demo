@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>serverA</title>
+	<script src="./jquery.js"></script>
+</head>
+<body>
+	<h4> this is serverA </h4>
+
+	<button id="cors_get">cors_get</button><br/>
+
+
+	<script type="text/javascript">
+		$('#cors_get').on('click', function(){
+			console.log('get test');
+			$.ajax({
+				url: 'http://localhost:3001/abc', // local domain 3000
+				method: 'GET',
+				success: function(data) {
+					console.log('success', data);
+				},
+				error: function(err) {
+					console.log('error', err);
+				}
+			});
+		});
+
+	</script>
+</body>
+</html>
